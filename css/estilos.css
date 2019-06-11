@@ -1,0 +1,604 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+@font-face{  
+            font-family: 'SFDigitalReadout-Light';  
+            src:url('../fonts/SFDigitalReadout-Light.ttf') format('truetype');              
+        }  
+
+body {
+	background-color: rgba(44, 62, 80,.5);
+
+}
+
+header {
+	width: 960px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tiempo {
+	width: 250px;
+	height: 100px;
+	float: left;
+}
+
+#fecha {
+	margin-top: 20px;
+	margin-left: 50px;
+	color: #ecf0f1;
+}
+
+#hora {
+	width: 100px;
+	margin-left: 80px;
+	margin-top: 10px;
+	color: #ecf0f1;
+}
+
+#fecha p{
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+}
+
+#hora p{
+	font-family: 'SFDigitalReadout-Light';
+	font-size: 25px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#hora #pSegundos {
+	font-size: 18px;
+}
+
+
+/* Inicio estilos menu principal */
+#menuPrincipal {
+	width: 960px;
+	height: 57px;
+	background-color: rgba(44, 62, 80,.8);
+}
+
+
+#menuPrincipal li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+	float:right;
+}
+
+#menuPrincipal li a {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	color: white;
+	
+} 
+
+
+#menuPrincipal li a:hover {
+	color: #1abc9c;
+}
+
+#menuPrincipal .activo {
+    text-decoration: none;
+    background-color: #16a085;
+    padding: 10px;
+}
+
+/* fin estilos menu principal */
+
+.fijarMenu {
+  position: fixed;
+  width:100px;
+  top: 5px;
+}
+
+
+#inicio{
+	width: 960px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #16a085;
+}
+
+#servicios {
+	width: 960px;
+	height: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #16a085;
+}
+
+#servicios h1{
+	box-sizing: border-box;
+	padding: 60px;
+	text-align: center;
+	color: #ecf0f1;
+
+}
+
+#servicios p{
+	margin: 20px;
+	text-align: justify;
+	line-height: 20px;
+	float:left;
+	color: #ecf0f1;
+}
+
+#servicios ul {
+	margin-left: 300px;
+	line-height: 30px;
+	color: #ecf0f1;
+}
+
+#servicios img {
+	width: 100px;
+	margin-left: 450px;
+}
+
+
+#proyectos {
+	width: 960px;
+	height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #2980b9;
+}
+
+#proyectos h2 {
+	color: #ecf0f1;
+	font-size: 30px;
+	padding-top: 60px;
+	margin-left: 400px;
+	margin-bottom: 20px;
+}
+
+#proyectos img {
+	margin-left: 100px;
+	margin-top: 20px;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: white;
+}
+
+#sobreNosotros {
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #2980b9;
+}
+
+#btnLeerMas {
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+	color: #ecf0f1;
+	margin-left: 350px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e74c3c;
+	background-color: #e74c3c;
+}
+
+#btnLeerMas:hover {
+	border-color: #2980b9;
+	background-color: #2980b9;
+}
+
+#articulo{
+	display: none;
+}
+
+#articulo h2{
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+
+#articulo p {
+	text-align: justify;
+	margin-right: 20px;
+	margin-left: 20px;
+	line-height: 25px;
+	font-size: 16px;
+	color: white;
+}
+
+/* Inicio estilos contacto */
+
+#contacto{
+    width: 960px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   background-color: #ecf0f1;
+}
+
+#contacto h3{
+    color: #16a085;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#contacto input, textarea{
+  font-family : inherit;
+  font-size   : 100%;
+  text-align: top;
+  color: #16a085;
+}
+
+#contacto input:hover, textarea:hover{
+  font-family : inherit;
+  font-size   : 100%;
+  text-align: top;
+  color: #9b59b6;
+}
+
+#formulario {
+	width: 600px;
+	height: 420px;
+	margin-left: 270px;
+}
+
+form #nombre, #email{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 193px;
+}
+
+form #telefono {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 400px;
+}
+
+form #mensaje {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.btnEnviar {
+    height: 50px;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 280px;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+input, textarea, select, button {
+  width : 150px;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+      }
+
+ input, textarea {
+  font    : .9em/1.5em "handwriting", sans-serif;
+  border  : solid;
+  border-width: 1px;
+  padding : 0 10px;
+  margin  : 0;
+  width   : 240px;
+  background: none;
+} /* Fin estilos  contacto */
+
+
+
+footer{
+	width: 960px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #34495e;
+}
+
+#logoFooter {
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+
+#logoFooter img {
+	width: 100px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+
+#logoFooter p {
+	margin-left: 50px;
+	color: #1abc9c;
+	font-size: 20px;
+}
+
+#info {
+	width: 300px;
+	height: 150px;
+	margin-top: 40px;
+	float:left;
+}
+
+#info p{
+	margin-left: 60px;
+	color: white;
+	line-height: 40px;
+}
+
+#copyright p{
+	display: inline-block;
+	padding: 20px;
+	margin-top: 130px;
+	margin-left: 70px;
+	color: #e67e22;
+}
+
+/* Inicio de estilos para resolucones de 600px a 1023px */
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+header {
+	width: 580px;
+}
+
+#inicio{
+	width:580px;
+	height: 100px;
+}
+
+#amazingslider-wrapper-1{
+	width: 580px;
+}
+
+/* Inicio estilos menu principal */
+#menuPrincipal {
+	width: 580px;
+}
+
+
+#servicios {
+	width: 580px;
+	height: 600px;
+	background-color: #16a085;
+}
+
+
+#servicios ul {
+	margin-left: 150px;
+}
+
+#servicios img {
+	width: 150px;
+	margin-left: 200px;
+}
+
+
+#proyectos {
+	width: 580px;
+	height: 500px;
+}
+
+#proyectos h2 {
+	padding-top: 40px;
+	margin-left: 230px;
+}
+
+#proyectos img {
+	width: 200px;
+	margin-left: 50px;
+}
+
+
+#contacto{
+    width: 580px;
+}
+
+#formulario {
+	width: 450px;
+	margin-left: 70px;
+}
+
+#btnLeerMas {
+	margin-left: 170px;
+}
+
+
+#sobreNosotros {
+	width: 580px
+}
+
+footer{
+	width: 580px;
+	height: 270px;
+}
+
+#logoFooter {
+	width: 250px;
+}
+
+#copyright p{
+	width: 500px;
+	text-align: center;
+	margin-top: 0;
+	margin-left: 20px;
+}
+} /* Fin de estilos para resolucones de 600px a 1023px */
+
+/* Inicio estilos para resoluciones hasta 599px */
+
+@media all and (max-width: 599px){
+
+#tiempo {
+	width: 100%;
+}
+
+#fecha {
+	margin-left: 100px;
+}
+
+#hora {
+	margin-left: 130px;
+}
+
+#amazingslider-wrapper-1{
+	width: 100%;
+}
+
+/* Inicio estilos menu principal */
+
+#menuPrincipal .activo {
+    background-color: #e74c3c;
+    padding: 5px;
+}
+
+#menuPrincipal {
+	width: 100%;
+	height: 100px;
+}
+
+
+#menuPrincipal li {
+	padding: 0px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-left: 0px;
+}
+
+/* fin estilos menu principal */
+
+
+
+
+#inicio{
+	width: 100%;
+	height: 180px;
+}
+
+#servicios {
+	width: 100%;
+	height: 750px;
+}
+
+#servicios h1{
+	padding: 100px;
+}
+
+#servicios ul {
+	margin-left: 40px;
+	line-height: 30px;
+	color: #ecf0f1;
+}
+
+#servicios img {
+	width: 100px;
+	margin-left: 120px;
+}
+
+
+#proyectos {
+	width: 100%;
+	height: 900px;
+	background-color: #2980b9;
+}
+
+#proyectos h2 {
+	padding-top: 100px;
+	margin-left: 120px;
+}
+
+#proyectos img {
+	width: 200px;
+	margin-left: 80px;
+}
+
+#sobreNosotros {
+	width: 100%;
+}
+
+#btnLeerMas {
+	margin-left: 80px;
+}
+
+/* Inicio estilos contacto */
+
+#contacto{
+    width: 100%;
+    height: 830px;
+}
+
+#contacto h3{
+	padding: 100px;
+}
+
+#formulario {
+	width: 300px;
+	margin-left: 60px;
+}
+
+form #nombre, #email{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 250px;
+}
+
+form #telefono {
+    width: 250px;
+}
+
+form #mensaje {
+    width: 250px;
+}
+
+.btnEnviar {
+    margin-left: 100px;
+}
+ /* Fin estilos  contacto */
+
+
+
+footer{
+	width: 100%;
+	height: 420px;
+}
+
+#logoFooter {
+	margin-left: 50px;
+}
+
+
+#logoFooter p {
+	margin-left: 50px;
+	color: #1abc9c;
+	font-size: 20px;
+}
+
+#info {
+	margin-left: 20px; 
+	margin-top: 0px;
+}
+
+#copyright p{
+	margin-top: 0px;
+}
+
+} /* Fin estilos para resoluciones hasta 599px */

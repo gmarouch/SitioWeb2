@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+	<title>EV Electricidad Domiciliaria</title>
+    
+	<link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/lightbox.css">
+    
+    <script type="text/javascript" src="js/jquery.js"></script> 
+    <script src="js/codigo.js"></script>
+
+     <!-- Script y links utilizados por el slider creado con Amazing Slider  -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- Fin de Script y links utilizados por el slider creado con Amazing Slider  -->
+
+
+<body>	
+	<header id="inicio">
+    <div id="tiempo">
+    <div id="fecha">
+       <p id="pDiaSemana">Domingo</p>
+       <p id="pDia">9</p>
+        <p>de</p>
+        <p id="pMes">Diciembre</p>
+        <p>de</p>
+        <p id="pYear">2019</p><br>
+    </div>
+    <div id="hora">
+        <p id="pHoras">12</p>
+        <p>:</p>
+        <p id="pMinutos">00</p>
+        <p>:</p>
+        <p id="pSegundos">00</p>
+    </div>
+</div>
+
+		<nav id="menuPrincipal">
+            <ul id="botones">
+                <li><a href="#contacto" id="menuContacto" >Contacto</a></li>
+                <li><a href="#proyectos" id="menuProyectos" >Proyectos</a></li>
+                <li><a href="#servicios" id="menuServicios" >Servicios</a></li>
+                <li><a href="#inicio" id="menuInicio" >Inicio</a></li>
+            </ul>
+		</nav>
+
+	</header>
+	<section >
+
+    <!-- Slider realizado con Amazing Slider-->
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:960px;margin:0px auto 0px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/imgUno.jpg" data-description="Garantizamos la seguridad electrica de las personas, los bienes y el medio ambiente aplicando las leyes y reglamentos establecidos en la provincia de Córdoba." />
+                </li>
+                <li><img src="images/ImgDos.jpg" data-description="Trabajamos con las mejores marcas y la ultima tecnologia para obtener mayor seguridad y ahorro de energia en su hogar." />
+                </li>
+                <li><img src="images/ImgTres.jpg" data-description="Realiza tu consulta y pedi tu presupuesto gratis" />
+                <a href="#contacto"><button class="amazingsliderbutton as-btn-navy-large">Presupuesto</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fin Slider realizado con Amazing Slider -->
+    </section>
+
+        <section id="servicios">
+            <h1>Electricidad Domiciliaria</h1>
+            <img src="./images/foco.png" alt="foco">
+            <p>Somos especialistas en Instalaciones eléctricas, reparaciones y el mantenimiento de redes eléctricas del hogar. Ofreciendo soluciones. Contamos con más de 20 años de experiencia en el sector de las reparaciones y mantenimientos a domicilio a si como en mantenimientos preventivos.</p>
+            <ul>
+                <li>Instalación Electricas</li>
+                <li>Empresa Contratista de Obras para municipios y cooperativas</li>
+                <li>Certificado de instalación eléctrica</li>
+                <li>Reforma de viviendas</li>
+            </ul> 
+       </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <a href="images/grande1.jpg" data-lightbox="grupo" data-title="Proyecto1"> <img src="images/chica1.jpg" class="galeria"></a>
+            <a href="images/grande2.jpg" data-lightbox="grupo" data-title="Proyecto2"> <img src="images/chica2.jpg" class="galeria"></a>
+            <a href="images/grande3.jpg" data-lightbox="grupo" data-title="Proyecto3"> <img src="images/chica3.jpg" class="galeria"></a>
+            <a href="images/grande4.jpg" data-lightbox="grupo" data-title="Proyecto4"> <img src="images/chica4.jpg" class="galeria"></a>
+        </section>
+
+        <section id="contacto"> <!-- Inicio Formulario contacto -->
+                <h3>Pedi tu presupuesto Gratis</h3>  
+            <form action="" method="" id="formulario" name="" onsubmit="return validacion()">
+                <input type="text" placeholder="Nombre" maxlength="20" name="Nombre" id="nombre">
+                <input type="email" placeholder="Email" maxlength="20" name="Email" id="email">
+                <input type="tel" placeholder="Teléfono" maxlength="20" name="Telefono" id="telefono">
+                <textarea class="mensaje" name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aqui..."></textarea>
+                <input type="submit"  name="Enviar" class="btnEnviar">
+            </form>
+             <button id="btnLeerMas" href="#" onClick="mostrarOcultar('articulo')">Saber más de nosotros</button>
+        </section> <!-- Fin Formulario contacto -->
+
+        <section id="sobreNosotros">
+           
+            <article id="articulo">
+                <h2>La Empresa</h2>
+                <p>Empresa dedicada a la electricidad en general. Fundada en el año 2015 y dirigida por profesionales con más de 20 años de experiencia en el sector.
+                Las oficinas están ubicadas en Las Varillas (Cba) y contamos con depositos para el almacenaje de material, herramientas y vehículos</p>
+                <p>Nuestro carácter de empresa dinámica nos ha permitido crecer constantemente de manera sostenible. El objetivo de <strong>"Electricidad Domiciliaria Las Varillas"</strong> no es únicamente ofrecer un producto de calidad, sino ofrecer, además, un servicio personalizado y diferencial para satisfacer las expectativas de nuestros clientes. El trabajo bien hecho es satisfacción para nosotros y para nuestros clientes</p>
+                <h2>Sobre Nosotros</h2>
+                <p>Contamos con un equipo de profesionales formados con amplia experiencia en el área de la de mantenimiento, reparacion e instalaciones eléctricas. A lo largo de nuestra historia hemos realizado todo tipo de proyectos desde domicilios hasta comercios.
+                Nuestro equipo está formado por electricistas matriculados por el ERSEP de categoria III </p><br>
+            </article>
+        </section>
+        
+	<footer>
+        <div id="logoFooter">
+            <img src="./images/logoFooter.png" alt="logoFooter">
+            <p>Electricidad Domiciliaria</p>
+        </div>
+        <div id="info">
+            <p>Dirección: Ituzaingo 93 Bº Alta Córdoba</p>
+            <p>Las Varillas - Córdoba</p>
+            <p>Telefono: (3533) 686246</p>
+        </div>
+        <div id="copyright">
+            <p>Copyright © 2019 | Gabriel Marouch</p>
+        </div>
+        
+    </footer>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+</body>
+</html>

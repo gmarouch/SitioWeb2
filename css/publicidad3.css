@@ -1,0 +1,58 @@
+body {
+	overflow: hidden;
+	background-image: url("../images/publicidad3.png");
+	background-repeat: no-repeat;
+
+}
+
+#botones {
+	width: 550px;
+	height: 70px;
+	margin-left: 650px;
+	margin-top: 320px;
+	padding: 40px;
+	font-family: 'Teko', sans-serif;
+}
+
+#masInfo{
+	width: 100px;
+	height: 100px;
+	color: #51342b;
+	text-decoration: none;
+	margin-left: 50px;
+	font-size: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: #f2467c;
+	background-color: #f2467c;
+	padding: 10px;
+}
+
+#masInfo:hover {
+	border-color: #ef5f8c;
+	background-color: #ef5f8c;
+	color: #f39c12;
+}
+
+#cerrarPopUp{
+	width: 100px;
+	height: 100px;
+	color:#51342b;
+	text-decoration: none;
+	margin-left: 50px;
+	font-size: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: #f2467c;
+	background-color: #f2467c;
+	padding: 10px;
+
+}
+
+#cerrarPopUp:hover {
+	border-color: #ef5f8c;
+	background-color: #ef5f8c;
+	color: #f39c12;
+}
